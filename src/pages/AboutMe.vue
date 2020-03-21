@@ -2,7 +2,9 @@
   <div class="about">
     <nav>
       <ul class="nav">
-       
+        <li>
+          <ToggleTheme/>
+        </li>
         <li>
           <g-link class="header__link" to="/">Home</g-link>
         </li>
@@ -29,30 +31,33 @@
           <img alt="Github" src="https://image.flaticon.com/icons/png/512/25/25231.png" style="filter: invert(100%)" width="32" data-src="https://image.flaticon.com/icons/png/512/25/25231.png" data-srcset="https://image.flaticon.com/icons/png/512/25/25231.png 32w" data-sizes="(max-width: 32px) 100vw, 32px" class="g-image g-image--lazy g-image--loaded" sizes="(max-width: 32px) 100vw, 32px" srcset="https://image.flaticon.com/icons/png/512/25/25231.png 32w">
         </a>
       </p>
-      <FormContact />
+      <!-- <FormContact /> -->
     </div>
-    
+    <FormContact />
     </div>
  
   </div>
 </template>
 
 <script>
-  import FormContact from '~/components/Contact';
-
-  export default {
-    components : {
-      FormContact
-    }
+import ToggleTheme from "~/components/ToggleTheme.vue";
+import FormContact from "~/components/Contact.vue"
+// import Talks from "~/components/Talks.vue";
+export default {
+  components: {
+    ToggleTheme,
+    FormContact
   }
+};
 </script>
+
 
 <style lang="scss">
 
 
 .about {
   min-height: 100vh;
-  background: #000;
+  // background: #000;
 
   &__data {
     display: flex;

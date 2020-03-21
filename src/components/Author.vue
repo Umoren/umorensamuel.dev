@@ -9,7 +9,7 @@
 
 		<p class="author__intro">
 			Hello, <br>
-			I'm a frontend developer based in Uyo, Nigeria. I'm interested in web performance, accessibility and software engineering principles most times.
+			I'm a frontend developer based in Uyo, Nigeria. I'm interested in web performance, accessibility and software engineering principles.
 
 
 		</p>
@@ -22,7 +22,7 @@
 				<img alt="Github" src="https://image.flaticon.com/icons/png/512/25/25231.png"  width="32" data-src="https://image.flaticon.com/icons/png/512/25/25231.png" data-srcset="https://image.flaticon.com/icons/png/512/25/25231.png 32w" data-sizes="(max-width: 32px) 100vw, 32px" class="g-image g-image--lazy g-image--loaded" sizes="(max-width: 32px) 100vw, 32px" srcset="https://image.flaticon.com/icons/png/512/25/25231.png 32w">
 			</a>
 		</p>
-
+	
 	</div>
 </template>
 
