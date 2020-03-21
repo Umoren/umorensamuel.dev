@@ -28,7 +28,7 @@
           <img alt="twitter" src="https://image.flaticon.com/icons/png/512/124/124021.png" width="32" data-src="https://image.flaticon.com/icons/png/512/124/124021.png" data-srcset="https://image.flaticon.com/icons/png/512/124/124021.png 32w" data-sizes="(max-width: 32px) 100vw, 32px" class="g-image g-image--lazy g-image--loaded" sizes="(max-width: 32px) 100vw, 32px" srcset="https://image.flaticon.com/icons/png/512/124/124021.png 32w">
         </a>
         <a href="//github.com/Umoren">
-          <img alt="Github" src="https://image.flaticon.com/icons/png/512/25/25231.png"  width="32" data-src="https://image.flaticon.com/icons/png/512/25/25231.png" data-srcset="https://image.flaticon.com/icons/png/512/25/25231.png 32w" data-sizes="(max-width: 32px) 100vw, 32px" class="g-image g-image--lazy g-image--loaded" sizes="(max-width: 32px) 100vw, 32px" srcset="https://image.flaticon.com/icons/png/512/25/25231.png 32w">
+          <img alt="Github" src="https://image.flaticon.com/icons/png/512/25/25231.png" style="filter: invert(100%)" width="32" data-src="https://image.flaticon.com/icons/png/512/25/25231.png" data-srcset="https://image.flaticon.com/icons/png/512/25/25231.png 32w" data-sizes="(max-width: 32px) 100vw, 32px" class="g-image g-image--lazy g-image--loaded" sizes="(max-width: 32px) 100vw, 32px" srcset="https://image.flaticon.com/icons/png/512/25/25231.png 32w">
         </a>
       </p>
       <!-- <FormContact /> -->
@@ -98,6 +98,7 @@ export default {
 @media only screen and (max-width: 330px) {
   .bio{
     width: 18em !important;
+    margin-left: 1.3em;
   }
   .about{
     &__data{

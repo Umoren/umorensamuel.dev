@@ -58,10 +58,10 @@ export default {
 <style lang="scss">
 #app{
   border: 6px solid #ed54df;
-  width: 100%;
+  
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   #app{
     width: 91%;
   }
