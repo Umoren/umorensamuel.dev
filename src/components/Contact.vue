@@ -1,33 +1,44 @@
 <template> 
     <div>
-        <form name="contact" data-netlify="netlify" method="POST">
+        <form name="contact" netlify-honeypot="bot-field" action="/thank-you" method="POST" netlify >
             <h1 id="headerText"> Hire Me!</h1>
+             <input type="hidden" name="form-name" value="contact" />
+               <p class="hidden">     
+                    <label>Don’t fill this out: <input name="bot-field"></label>  
+                </p>
             <div class="contact_form">
-                <label>
+                <label class="form-label">
                     
-                    <input placeholder="Enter name" name="name" type="text">
+                    <input placeholder="Enter name" class="form-field" name="name" type="text">
+                   
                 </label>
 
-                <label>
+                <label class="form-label">
                     
-                    <input placeholder="Enter email " name="email" type="email">
+                    <input placeholder="Enter email " class="form-field" name="email" type="email">
                 </label>
                 <div>
-                    <label for=""></label>
+                    <label for="f"></label>
                     <textarea name="message" id="" cols="30" rows="10"  placeholder="Shoot your shot!"></textarea>
                 </div>
+              
             </div>
 
             <button type="submit"> SHOOT &rightarrow; </button>
         </form>
+
     </div>
 
 
 </template>
 
+
 <style scoped lang="scss">  
 @import url('https://fonts.googleapis.com/css?family=Mallanna|Roboto+Mono&display=swap');
 
+    .hidden{
+        display: none;
+    }
     form{
         margin-bottom: 3em;
     }
