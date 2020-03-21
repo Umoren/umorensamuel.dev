@@ -57,8 +57,7 @@ export default {
 
 <style lang="scss">
 #app{
-  background: #000;
-  border: 9px solid #fff;
+  border: 6px solid #ed54df;
 }
 
 .header {
