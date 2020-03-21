@@ -14,7 +14,7 @@
     <div class="about__data">
       <div class="bio">
         <h1 class="intro">Hey there</h1>
-        <p>
+        <p class="">
              I'm a Frontend Developer ,
               I am passionate about building awesome user interfaces for web apps  that are accessible to everyone and highly perfomant. 
               I also enjoy working with web technologies to solve problems. 
@@ -95,7 +95,18 @@ export default {
   height: 70vh;
   width: 100% auto;
 }
+@media only screen and (max-width: 330px) {
+  .bio{
+    width: 18em !important;
+  }
+  .about{
+    &__data{
+      width: 98% !important;
+      margin-left: .1em;
+    }
+  }
 
+}
 @media only screen and (max-width: 650px) {
   .about {
     &__data {
@@ -103,7 +114,9 @@ export default {
       flex-direction: column;
 
       .bio {
-        width: 22em;
+        width: 20em;
+        text-emphasis: wrap;
+        overflow-wrap: break-word;
         text-align: center;
       }
 
