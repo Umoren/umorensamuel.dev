@@ -6,21 +6,14 @@ webhook_url:
 sections:
 - type: heading
   label: Heading
-- type: directory
-  path: contents/posts
-  label: Sidebar
-  create: all
-  match: "**/*"
 - type: document
   path: contents/posts
   label: Posts
-  match: "**/*"
-  read_only: false
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: false
-file_template: ":filename:"
+file_template: ":filename:, :year:, :month:, :day:"
 build:
   install_dependencies_command: npm install
   preview_docker_image: node:10
