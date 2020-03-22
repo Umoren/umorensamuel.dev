@@ -7,7 +7,7 @@
 module.exports = {
   siteName: 'Umoren Samuel',
   siteDescription: 'Frontend and Software Engineering Blog by Umoren Samuel.',
-
+  siteUrl: 'https://umorensamuel.codes',
   templates: {
     Post: '/:title',
     Tag: '/tag/:id'
@@ -15,7 +15,7 @@ module.exports = {
 
   icon: {
     // favicon: '~/src/favicon.png',
-    favicon: './src/favicon-16x16.png'
+    favicon: './src/assets/images/favicon-16x16.png'
     // touchicon: '~/src/my-touchicon.png'
   },
 
@@ -80,23 +80,23 @@ module.exports = {
         }
       }
     },
-    {
-      use: 'gridsome-plugin-pwa',
-      options: {
-          title: 'Umoren Samuel Codes',
-          startUrl: '/',
-          display: 'standalone',
-          statusBarStyle: 'default',
-          disableServiceWorker: false,
-          cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg',
-          shortName: 'Umoren Samuel',
-          themeColor: '#666600',
-          backgroundColor: '#000000',
-          icon: '', // must be provided like 'src/favicon.png'
-          msTileImage: '',
-          msTileColor: '#666600'
-      }
-  },
+  //   {
+  //     use: 'gridsome-plugin-pwa',
+  //     options: {
+  //         title: 'Umoren Samuel Codes',
+  //         startUrl: '/',
+  //         display: 'standalone',
+  //         statusBarStyle: 'default',
+  //         disableServiceWorker: false,
+  //         cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg',
+  //         shortName: 'Umoren Samuel',
+  //         themeColor: '#666600',
+  //         backgroundColor: '#000000',
+  //         icon: '', // must be provided like 'src/favicon.png'
+  //         msTileImage: '',
+  //         msTileColor: '#666600'
+  //     }
+  // },
   {
     use: "gridsome-plugin-service-worker",
     options: {
@@ -113,6 +113,17 @@ module.exports = {
       },
     },
   },
+  {
+    use: "gridsome-plugin-manifest",
+    options: {
+        background_color: "#000000",
+        icon_path: "./src/assets/images/manifest.png",
+        name: "Umoren Samuel Codes",
+        short_name: "Umoren Samuel",
+        theme_color: "#000000",
+        lang: "en",
+    },
+}
 
     
   ],
