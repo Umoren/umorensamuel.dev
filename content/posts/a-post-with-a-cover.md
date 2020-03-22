@@ -18,7 +18,7 @@ Hi, welcome to my space!. I finally decided to start my personal blog.  My name 
 
 ### Purpose
 
-I personally feel blogging is one of the fastest methods of learning how to understand a particular concept or learning new development concepts.
+I personally feel blogging is one of the fastest methods of learning how to understand a particular concept or learning new development concepts.ddd
 
 Recently, i completed Google's Technical writing course and i feel this would be the best way to practice my new skills. It's also the easiest way to contribute to the developers community.
 
