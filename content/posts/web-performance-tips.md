@@ -6,7 +6,7 @@ tags:
   - web performance
   - javascript
   - we
-canonical_url: true
+canonical_url: false
 description: Improve web page performance with these tips.
 ---
 Some content heres
