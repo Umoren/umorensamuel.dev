@@ -15,6 +15,7 @@
       </main>
     </transition> 
 
+
     <footer class="footer">
       <span class="footer__copyright">Copyright © {{ new Date().getFullYear() }}. </span>
       Made with 💚 by 

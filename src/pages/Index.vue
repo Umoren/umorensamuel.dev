@@ -5,8 +5,10 @@
 
     <!-- List posts -->
     <div class="posts">
-      <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
-        <!-- <vue-disqus shortname="umorensamuel-codes.disqus.com" :identifier="$page.post.title" /> -->
+      <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node">
+           <!-- <vue-disqus shortname="umorensamuel-codes.disqus.com"  > </vue-disqus> -->
+        </PostCard>
+     
     </div>
   
   </Layout>

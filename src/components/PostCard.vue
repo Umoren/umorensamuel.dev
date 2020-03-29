@@ -12,6 +12,7 @@
 
       <g-link class="post-card__link" :to="post.path">Link</g-link>
     </div>
+    
   </div>
 </template>
 
