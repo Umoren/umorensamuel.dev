@@ -85,6 +85,7 @@ query Post ($id: ID!) {
   text-align: center;
 }
 
+
 .post {
 
   &__header {

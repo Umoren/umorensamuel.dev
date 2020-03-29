@@ -17,10 +17,12 @@
 
 
     <footer class="footer">
-      <span class="footer__copyright">Copyright © {{ new Date().getFullYear() }}. </span>
+      <span class="footer__copyright">Copyright © {{ new Date().getFullYear() }}. 
+        
+      </span>
       Made with 💚 by 
         <a href="//twitter.com/samuelumoren16"> @samuelumoren16 </a>
-      <span class="footer__links"> Powered by <a href="//gridsome.org"> Gridsome </a></span>
+     
     </footer>
 
   </div>
