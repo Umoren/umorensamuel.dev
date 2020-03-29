@@ -1,4 +1,5 @@
 ---
+image: /images/uploads/what-the-heck-is-web-perfromance.png
 title: 'What the heck is Web Performance: An Overview'
 date: 2020-03-29T11:23:49.898Z
 published: true
@@ -14,7 +15,6 @@ description: >-
   Web Accessibility and Performance are some of the most used words in the
   web-verse today and that's really a good thing cause we are in an endless
   pursuit to push the web to do more.
-image: /images/uploads/what-the-heck-is-web-perfromance.png
 ---
 <!--StartFragment-->
 
@@ -43,14 +43,6 @@ Performance issues vary. At best, they create small delays that are only briefly
 Performance is one of the essential mentions in any "What makes a good software" listing. Every branch of software including mobile, embedded or desktop must consider performance if that software is to be considered good software and I'm sure even though it wasn't included in the system requirement document, every client or user would not use software that's not accessible and performant. Some of the reasons why considering performance are vital :
 
 <!--EndFragment-->
-
-* <!--StartFragment-->
-
-  * **You want to retain users:**You want users to interact with your site meaningfully. If it's a blog, we want people to read posts. If it's an e-commerce site, we want them to buy stuff. If it's a social network, we want them to interact with each other. How these websites perform would play a major role in the success of your online business.
-  * **Performance is about improving conversions**: Retaining users is crucial to improving conversions. Slow sites hurt revenue, and the opposite is also true.
-  * **Performance is about the user experience:**When sites ship a lot of code, browsers must use megabytes of the user's data plan to download the code. Mobile devices have limited CPU power and memory. They often get overwhelmed with what we might consider a small amount of unoptimized code. This creates poor performance which leads to unresponsiveness. Knowing what we know about human behavior, users will only tolerate low performing applications for so long before abandoning them
-
-  <!--EndFragment-->
 
 <!--EndFragment-->
 
