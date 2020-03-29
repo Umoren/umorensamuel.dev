@@ -23,6 +23,10 @@
 
     <div class="post-comments">
       <!-- Add comment widgets here -->
+         <vue-disqus
+					shortname="umorensamuel-codes"
+					:identifier="$page.post.title"
+				/>
     </div>
 
     <Author class="post-author" />
@@ -35,6 +39,7 @@ import PostTags from '~/components/PostTags'
 import Author from '~/components/Author.vue'
 
 export default {
+  
   components: {
     Author,
     PostMeta,
@@ -45,9 +50,10 @@ export default {
       title: this.$page.post.title,
       meta: [
         {
-          name: 'description',
+          name: 'og:description',
           content: this.$page.post.description
         }
+      
       ]
     }
   }
