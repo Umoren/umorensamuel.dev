@@ -32,16 +32,19 @@ Performance issues vary. At best, they create small delays that are only briefly
 
 Performance is one of the essential mention in any "What makes a good software" listing. Every branch of software including mobile, embedded or desktop must consider performance if that software is to be considered a good software and i'm sure even though it wasn't included in the system requirement document, every client or user would not use software that's not accessible and performant. Some of the reasons why considering performance is vital :
 
-
-
-- **You want to retain users:** You want users to interact with your site meaningfully. If it's a blog, we want people to read posts. If it's an e-commerce site, we want them to buy stuff. If it's a social network, we want them to interact with each other. How these websites perform would play a major role in the success of your online business.
-
-- **Performance is about improving conversions**: Retaining users is crucial to improving conversions. Slow sites have a negative impact on revenue, and the opposite is also true.
-
-- **Performance is about the user experience:** Web developers today are trying to build websites with native experiences irrespective of the device you're using including mobile, watches, tablets and desktops. 
-
-
-
-
+* **You want to retain users:** You want users to interact with your site meaningfully. If it's a blog, we want people to read posts. If it's an e-commerce site, we want them to buy stuff. If it's a social network, we want them to interact with each other. How these websites perform would play a major role in the success of your online business.
+* **Performance is about improving conversions**: Retaining users is crucial to improving conversions. Slow sites have a negative impact on revenue, and the opposite is also true.
+* **Performance is about the user experience:** When sites ship a lot of code, browsers must use megabytes of the user's data plan in order to download the code. Mobile devices have limited CPU power and memory. They often get overwhelmed with what we might consider a small amount of unoptimized code. This creates poor performance which leads to unresponsiveness. Knowing what we know about human behavior, users will only tolerate low performing applications for so long before abandoning them
 
 <!--EndFragment-->
+
+### Conclusion
+
+In 2020, if you don't consider performance of your website, you're probably not doing the right thing. Software development teams should also include performance in system and software design stage of software development activities. 
+
+### Resources
+
+* [Performance Fundamentals](https://developer.mozilla.org/en-US/docs/Web/Performance/Fundamentals)
+* [Why Performance Matters](https://developers.google.com/web/fundamentals/performance/why-performance-matters)
+* [Website Performance Optimization](https://www.udacity.com/course/website-performance-optimization--ud884)
+* [Web Performance](https://developer.mozilla.org/en-US/docs/Web/Performance)
