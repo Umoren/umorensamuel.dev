@@ -4,6 +4,8 @@
 // Changes here requires a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+
+
 module.exports = {
   siteName: 'Umoren Samuel',
   siteDescription: 'Frontend and Software Engineering Blog by Umoren Samuel.',
@@ -12,7 +14,7 @@ module.exports = {
     Post: '/:title',
     Tag: '/tag/:id'
   },
-
+  
   icon: {
     // favicon: '~/src/favicon.png',
     favicon: './src/assets/images/favicon-16x16.png'
@@ -80,6 +82,7 @@ module.exports = {
         }
       }
     },
+   
   //   {
   //     use: 'gridsome-plugin-pwa',
   //     options: {
@@ -123,10 +126,10 @@ module.exports = {
         theme_color: "#000000",
         lang: "en",
     },
-}
+},
 
     
-  ],
+ ],
 
   transformers: {
     //Add markdown support to all file-system sources
@@ -140,3 +143,4 @@ module.exports = {
     }
   }
 }
+
