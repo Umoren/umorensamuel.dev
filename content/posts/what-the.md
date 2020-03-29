@@ -32,8 +32,15 @@ Performance issues vary. At best, they create small delays that are only briefly
 
 ### Why the heck is this important? I mean web performance?
 
-Performance is one of the essential mentions in any "What makes a good software" listing. Every branch of software including mobile, embedded or desktop must consider performance if that software is to be considered good software and I'm sure even though it wasn't included in the system requirement document, every client or user would not use software that's not accessible and performant. Some of the reasons why considering performance are vital :
+Performance is one of the essential mentions in any "What makes a good software" listing. Every branch of software including mobile, embedded or desktop must consider performance if that software is to be considered good software and I'm sure even though it wasn't included in the system requirement document, every client or user would not use software that's not accessible and performant. Some of the reasons why considering performance is vital :
 
+- **Performance is about improving conversions :** Retaining users is crucial to improving conversions. Slow sites have a negative impact on revenue, and the opposite is also true.
+
+- **Performance is about the user experience :** Performance is a foundational aspect of good user experiences. When sites ship a lot of code, browsers must use megabytes of the user's data plan in order to download the code. Mobile devices have limited CPU power and memory. They often get overwhelmed with what we might consider a small amount of unoptimized code. This creates poor performance which leads to unresponsiveness. Knowing what we know about human behavior, users will only tolerate low performing applications for so long before abandoning them. 
+
+- **Performance is about retaining users :** Performance plays a major role in the success of any online venture. Here are some case studies that show how high-performing sites engage and retain users better than low-performing ones.
+
+source: [Google Developers](https://developers.google.com/web/fundamentals/performance/why-performance-matters)
 
 ### Conclusion
 
