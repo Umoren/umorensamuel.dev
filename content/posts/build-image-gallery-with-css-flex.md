@@ -44,7 +44,9 @@ Let's say you're building a portfolio website for a designer or photographer or 
 
 Now let's dive into the code.
 
-This is repo:
+This is [github repo.](https://github.com/Umoren/flex_gallery)
+
+Check the demo [here](https://flexgallery.netlify.app/)
 
 ## **The Markup**
 
@@ -95,6 +97,14 @@ The child element `li` has this property `flex: 0 0 100%`
 
 > P.S. We are using mobile first responsive design techniques here. 
 
-The `flex: 0 0 100%` is an aggregation of 3 flex properties; `flex-grow, flex-shrink and flex-basis` respectively. Flex-shrink and flex-basis are optional. The default value is `flex: 0 auto` which is equivalent to `flex: 0 1 auto`. Here our `flex-basis: 100%` for mobile, in flex we don't use `width` to define the width of a flex item cause `width` is kind of static and `flex-basis` is relative. `flex-basis`  is both width and height in a Flexbox, depending on the flex direction. 
+The `flex: 0 0 100%` is an aggregation of 3 flex properties; `flex-grow, flex-shrink and flex-basis` respectively. Flex-shrink and flex-basis are optional. The default value is `flex: 0 auto` which is equivalent to `flex: 0 1 auto`. Here our `flex-basis: 100%` for mobile, in flex we don't use `width` to define the width of a flex item cause `width` is kind of static and `flex-basis` is relative. `flex-basis`  is both width and height in a Flexbox, depending on the flex direction. [Read more about width vs flex-basis](https://www.freecodecamp.org/news/flexboxs-flex-basis-explained-83d1a01413b7/)
 
-Furthermore, i used two breakpo
+Furthermore, i used two breakpoints. `min-width: 605px` for tablets and `min-width: 910px` for desktop. Depending on how you want to place your images, here in tablet screens, they'll a 2 images in a row and in desktop mode  3 images.
+
+> **Image credits: [Emmanuel Ikwuegbu.](<<a href="https://instagram.com/samuelumoren365/"><i class="fab fa-instagram"></i></a>>)** 
+
+## **Summary**
+
+Flexbox is not the official layout system for CSS (Grid is) but it's easier to use when creating layouts for simple pages like this. Use some of these flex layout generator tools to create your layout: [Loading.io](https://loading.io/flexbox/) or [Webflow](https://flexbox.webflow.com/). 
+
+Check the demo [here](https://flexgallery.netlify.app/).
