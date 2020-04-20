@@ -1,5 +1,5 @@
 ---
-image: /images/uploads/how-to-build-an-image-gall.png
+cover_image: /images/uploads/how-to-build-an-image-gall.png
 title: Build Image Gallery with CSS Flex
 date: 2020-04-20T20:44:27.309Z
 published: true
