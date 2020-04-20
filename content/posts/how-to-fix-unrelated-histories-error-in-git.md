@@ -1,5 +1,5 @@
 ---
-image: /images/uploads/how-to-build-an-image-gall-2-.png
+cover_image: /images/uploads/how-to-build-an-image-gall-2-.png
 title: How to fix unrelated histories error in git.
 date: 2020-04-20T22:46:16.125Z
 published: true
