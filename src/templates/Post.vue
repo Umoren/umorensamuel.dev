@@ -73,7 +73,7 @@ export default {
             { name: "twitter:card", content: "summary_large_image" },
             { name: "twitter:image", content: this.getImage() },
             { name: "twitter:description", content: this.$page.post.description },
-            { name: "twitter:title", content: this.$page.post.title },
+            // { name: "twitter:title", content: this.$page.post.title },
             { name: "twitter:site", content: "@samuelumoren16" },
             { name: "twitter:creator", content: "@samuelumoren16" },
             // open graph
