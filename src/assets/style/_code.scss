@@ -5,26 +5,25 @@ https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javasc
  * Based on dabblet (http://dabblet.com)
  * @author Lea Verou
  */
-
+ @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
  pre {
 	padding: calc(var(--space) / 2);
 	font-size: .85em;
 	background-color: var(--bg-code);
 	margin-bottom: 2em;
-	border: 1px solid var(--border-color);
 	border-radius: var(--radius);
   }
   
   code {
-	background-color: var(--bg-code);
-	border: 1px solid var(--border-color);
+	// background-color: var(--bg-code);
+	// border: 1px solid var(--border-color);
 	font-size: .85em;
 	padding: .2em .5em;
   }
   
   code[class*="language-"],
   pre[class*="language-"] {
-	  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	  font-family: 'Fira Code', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	  text-align: left;
 	  white-space: pre;
 	  word-spacing: normal;
@@ -101,7 +100,7 @@ https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javasc
   .language-css .token.string,
   .style .token.string {
 	  color: #9a6e3a;
-	  background: hsla(0, 0%, 100%, .5);
+	  // background: hsla(0, 0%, 100%, .5);
   }
   
   .token.atrule,

@@ -60,7 +60,7 @@ export default {
 
 <style lang="scss">
 #app{
-  border: 6px solid #ed54df;
+  border: 4px solid #ed54df;
   
 }
 

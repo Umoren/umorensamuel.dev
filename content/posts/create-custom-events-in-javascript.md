@@ -20,17 +20,26 @@ Every JavaScript developer with knowledge of the Document Object Model (DOM) kno
 
 #### Using the Event constructor
 
-The syntax:  `event = new Event(type [, eventInitDict])` Arguments: 
+The syntax:  
+``` event = new Event(type [, eventInitDict]) ``` 
+
+Arguments: 
 
 * type: This argument is a string that defines the type of event you are creating. 
+
 * eventInitDict: This argument is has two optional attributes:
 
-  * bubbles: returns a boolean value (false by default). if true, the event is directed to it's intended target.  
+  * bubbles: returns a boolean value (false by default). if true, the event is directed to it's intended target.****
+    
+    **Note**: You must set bubbles to true for your custom event to work properly, when it's set to false, the event is directed to the parent object not the target. If you're still confused, check this [code sandbox](https://plnkr.co/edit/?p=preview&preview).    
+    
+  * cancelable: returns a boolean value (false by default). if true, it cancels the event's default action. Custom Events do not have default actions but when you dispatch an event it might add some default action, using ``` event.preventDefault() ``` prevents any default action. 
+  
+     **Note**: To use ``` event.preventDefault() ``` in a new custom event, you must set cancelable to true.
 
-    **Note**: You must set bubbles to true for your custom event to work properly, when it's set to false, the event is directed to the parent object not the target. If you're still confused, check this [code sandbox](https://plnkr.co/edit/?p=preview&preview).
-  * cancelable: returns a boolean value (false by default). if true, it cancels the event's default action. Custom Events do not have default actions but when you dispatch an event it might add some default action, using `event.preventDefault()` prevents any default action. 
 
-    **Note**: To use `event.preventDefault()` in a new custom event, you must set cancelable to true.
+
+
 
 ```javascript
  let event = new Event('binder', {
@@ -59,7 +68,7 @@ After creating the event, the next step is to dispatch it to the EventTarget or 
     </script>
 ```
 
-The setToRed event, would just the h2 tag to red (very useless event!). You should pay attention to the \`headerText.dispatchEvent(event)\` and you can also set bubbles to false and see what would happen.
+The setToRed event, would just the h2 tag to red (very useless event!). You should pay attention to the ```headerText.dispatchEvent(event)``` and you can also set bubbles to false and see what would happen.
 
 ##### old method of creating custom events
 
