@@ -12,9 +12,9 @@ tags:
 canonical_url: true
 description: Learn how to create and trigger your own JavaScript Events in 5minutes.
 ---
-I was going through Redux docs, learning Actions and i was wondering what "dispatch" meant in JavaScript. In the process, i stumbled on JavaScript dispatchEvent from [javascript.info](javascript.info) and them boom! you can create your own JavaScript events? Let's try this thing!
+I was going through Redux docs, learning Actions and I was wondering what "dispatch" meant in JavaScript. In the process, I stumbled on JavaScript dispatchEvent from [javascript.info](javascript.info) and them boom! you can create your JavaScript events? Let's try this thing!
 
-Every JavaScript developer with knowledge of the Document Object Model (DOM) knows of popular events such as: `click`, `change`, `focus`, `submit` and so on. These events are called Browser Events.  However, a developer can decide to create their own events using the `Events` or `CustomEvents` constructor. These sort of events are called Synthetic Events. **(React Developers would be familiar with the term Synthetic Events and Vue Developers with Custom Events)**.
+Every JavaScript developer with knowledge of the Document Object Model (DOM) knows of popular events such as `click`, `change`, `focus`, `submit` and so on. These events are called Browser Events.  However, a developer can decide to create their events using the `Events` or `CustomEvents` constructor. These sorts of events are called Synthetic Events. **(React Developers would be familiar with the term Synthetic Events and Vue Developers with Custom Events)**.
 
 ### Creating an Event
 
@@ -27,11 +27,11 @@ Arguments:
 
 * type: This argument is a string that defines the type of event you are creating. 
 
-* eventInitDict: This argument is has two optional attributes:
+* eventInitDict: This argument has two optional attributes:
 
   * bubbles: returns a boolean value (false by default). if true, the event is directed to it's intended target.****
     
-    **Note**: You must set bubbles to true for your custom event to work properly, when it's set to false, the event is directed to the parent object not the target. If you're still confused, check this [code sandbox](https://plnkr.co/edit/?p=preview&preview).    
+    **Note**: You must set bubbles to true for the custom event to work properly. When it's set to false, the event is directed to the parent object not the target. If you're still confused, check this [code sandbox](https://plnkr.co/edit/?p=preview&preview).    
     
   * cancelable: returns a boolean value (false by default). if true, it cancels the event's default action. Custom Events do not have default actions but when you dispatch an event it might add some default action, using ``` event.preventDefault() ``` prevents any default action. 
   
@@ -68,9 +68,9 @@ After creating the event, the next step is to dispatch it to the EventTarget or 
     </script>
 ```
 
-The setToRed event, would just the h2 tag to red (very useless event!). You should pay attention to the ```headerText.dispatchEvent(event)``` and you can also set bubbles to false and see what would happen.
+The ```setToRed``` event, would set the ```h2``` tag to red. You should pay attention to the ```headerText.dispatchEvent(event)``` and you can also set bubbles to false and see what would happen.
 
-##### old method of creating custom events
+##### Old method of creating custom events
 
 ![Custom Events ](/images/uploads/carbon.png "Old way of creating custom events")
 
@@ -78,7 +78,7 @@ The setToRed event, would just the h2 tag to red (very useless event!). You shou
 
 This interface inherited from the Event class gives you the ability to add data properties to the event object. 
 
-Let's see how this works by adding a property to our `setToRed` event.
+Let's see how this works by adding a property to our ```setToRed``` event.
 
 ```javascript
   <h2 id="defaultText"> Hey check this out </h2>
@@ -102,13 +102,13 @@ Let's see how this works by adding a property to our `setToRed` event.
     </script>
 ```
 
-The CustomEvent gives us a \`detail\` field that can accept any property. In our code we added a text property that would override the headerText content.
+The CustomEvent gives us a ```detail``` field that can accept any property. In our code, we added a text property that would override the headerText content.
 
-We just created and dispatched custom events. Now we can try something more interesting. Let's play around something that works similarly to two way data binding. JavaScript frameworks like React and Vue, have made implementing two way data binding very easy and readable but we can try something close to that with custom events.
+We just created and dispatched custom events. Now we can try something more interesting. Let's play around with something that works similarly to two-way data binding. JavaScript frameworks like React and Vue, have made implementing two-way data binding very easy and readable but we can try something close to that with custom events.
 
-**Two way data binding in React**
+##### Two way data binding in React
 
-The handleChange() method targets the value of the input and when rendering we say get and update the input state onChange event.   
+The ```handleChange()``` method targets the value of the input and when rendering we say get and update the input state ```onChange``` event.   
 
 ```javascript
 import React from "react";
@@ -144,9 +144,9 @@ ReactDOM.render(<App />, rootElement);
 
 Check the result here: [React two way data binding](https://04o46x03q0.csb.app/)
 
-**Two way data binding with Vue**
+##### Two-way data binding with Vue
 
-Vue makes this very easy with it's v-model directive.
+Vue makes this very easy with the ```v-model``` directive.
 
 ```javascript
 <template>
@@ -183,7 +183,8 @@ export default {
 
 Check the result here: [Vue two way data binding](https://78dm4.csb.app/)
 
-**Now something that's not two way binding but is similar with CustomEvents** To implement two way binding with JavaScript, we would have to introduce getters and setters, that's out of the scope of this article.
+##### Now, something that's not two way-binding but is similar with CustomEvents
+To implement two-way binding with JavaScript, we would have to introduce getters and setters, that's out of the scope of this article.
 Let's play around with custom events by setting the value of the input to a text property we would add in the details field. Then we would access that property in our handler function and viola!!
 
 ```javascript
@@ -217,10 +218,10 @@ Let's play around with custom events by setting the value of the input to a text
 
 ### Summary
 
-* We can create our own events from code by using an Event object: `new Event('title' [, eventInitDict])`. 
-* eventInitDict has two properties: `bubbles:false`, `cancelable: false`.
-* For custom events with data properties, we use the `CustomEvent` interface that provides us with a detail field where we can assign event data. 
-* event.detail is used to access the detail object in our handler function.
+* We can create our events from code by using an Event object: ```new Event('title' [, eventInitDict])```. 
+* ```eventInitDict``` has two properties: ```bubbles:false```, ```cancelable: false```.
+* For custom events with data properties, we use the ```CustomEvent``` interface that provides us with a ```detail``` field where we can assign event data. 
+* ```event.detail``` is used to access the ```detail``` object in our handler function.
 
 ### Read more:
 

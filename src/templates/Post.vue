@@ -40,9 +40,10 @@
 </template>
 
 <script>
-import PostMeta from '~/components/PostMeta'
-import PostTags from '~/components/PostTags'
-import Author from '~/components/Author.vue'
+import PostMeta from '~/components/PostMeta';
+import PostTags from '~/components/PostTags';
+import Author from '~/components/Author.vue';
+import getShareImage from '@jlengstorf/get-share-image';
 
 export default {
   
@@ -56,11 +57,30 @@ export default {
       return {
           title: this.$page.post.title,
           meta: [
-              {key: "og:type",property: "og:type", content: 'article'},
-              {key: 'og:title' ,property: "og:title", content: this.$page.post.title},
-              {key: 'description', name: "description", content: this.$page.post.description},
-              {key:"og:url" ,property: "og:url", content: this.postUrl},
-              {key: "article:published_time", property: "article:published_time", content: this.$page.post.date},
+            {
+              name: this.$page.post.title,
+              content: this.$page.post.description
+            }, 
+            {key: "og:type",property: "og:type", content: 'article'},
+            {key: 'og:title' ,property: "og:title", content: this.$page.post.title},
+            {key: 'description', name: "description", content: this.$page.post.description},
+            {key:"og:url" ,property: "og:url", content: this.postUrl},
+            {key: "article:published_time", property: "article:published_time", content: this.$page.post.date},
+
+            {key: "article:published_time", property: "article:published_time", content: this.$page.post.date},
+
+                    //twitter card: https://cards-dev.twitter.com/validator
+            { name: "twitter:card", content: "summary_large_image" },
+            { name: "twitter:image", content: this.getImage() },
+            { name: "twitter:description", content: this.$page.post.description },
+            { name: "twitter:title", content: this.$page.post.title },
+            { name: "twitter:site", content: "@samuelumoren16" },
+            { name: "twitter:creator", content: "@samuelumoren16" },
+            // open graph
+            { property: "og:title", content: this.$page.post.title },
+            { property: "og:description", content: this.$page.post.description },
+            { property: "og:image", content: this.getImage() },
+            { property: "og:updated_time", content: this.$page.post.date },
           ]
       }
   },
@@ -71,6 +91,22 @@ export default {
 
           return postPath ? `${siteUrl}${postPath}` : `${siteUrl}/${slugify(this.$page.post.title)}/`;
       }
+  },
+
+  methods: {
+    getImage() {
+      const socialImage = getShareImage({
+        title: this.$page.post.title,
+        tagline: 'umorensamuel.dev',
+        cloudName: 'samtech',
+        imagePublicID: 'sammy',
+        titleFont: 'futura',
+        taglineFont: 'futura',
+        titleFontSize: 72,
+        textColor: '232129',
+      });
+      return socialImage;
+    }
   }
 }
 </script>
@@ -140,13 +176,14 @@ query Post ($id: ID!) {
     }
 
     p:first-of-type {
-      font-size: 1.2em;
-      color: var(--title-color);
+      font-size: normal;
+      // color: var(--title-color);
     }
 
     img {
       width: calc(100% + var(--space) * 2);
       margin-left: calc(var(--space) * -1);
+      padding: var(--space);
       display: block;
       max-width: none;
     }
