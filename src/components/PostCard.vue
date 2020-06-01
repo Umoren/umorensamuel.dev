@@ -49,6 +49,7 @@ export default {
 
   &__image {
     min-width: 100%;
+    padding: calc(var(--space) / 1);
   }
 
   &__title {

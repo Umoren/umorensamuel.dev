@@ -163,6 +163,7 @@ query Post ($id: ID!) {
 
     img {
       width: 100%;
+      padding: calc(var(--space) /1)
     }
 
     &:empty {
