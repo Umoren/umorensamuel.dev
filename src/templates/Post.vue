@@ -100,10 +100,10 @@ export default {
         tagline: 'umorensamuel.dev',
         cloudName: 'samtech',
         imagePublicID: 'sammy',
-        titleFont: 'futura',
+        titleFont: 'Roboto ',
         taglineFont: 'futura',
-        titleFontSize: 72,
-        textColor: '232129',
+        titleFontSize: 84,
+        textColor: '000000',
       });
       return socialImage;
     }
