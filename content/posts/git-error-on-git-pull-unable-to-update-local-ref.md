@@ -1,5 +1,5 @@
 ---
-image: /images/uploads/git-error-on-git-pull-unable-to-update-local-ref-.png
+cover_image: /images/uploads/git-error-on-git-pull-unable-to-update-local-ref-.png
 title: Git error on git pull (unable to update local ref)
 date: 2020-06-01T15:19:16.154Z
 published: true
