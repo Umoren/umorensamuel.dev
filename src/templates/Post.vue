@@ -99,10 +99,10 @@ export default {
         title: this.$page.post.title,
         tagline: 'umorensamuel.dev',
         cloudName: 'samtech',
-        imagePublicID: 'sammy',
+        imagePublicID: 'whiteimage',
         titleFont: 'Roboto ',
         taglineFont: 'futura',
-        titleFontSize: 84,
+        titleFontSize: 64,
         textColor: '000000',
       });
       return socialImage;
