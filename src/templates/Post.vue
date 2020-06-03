@@ -62,6 +62,8 @@ export default {
               content: this.$page.post.description
             }, 
             {key: "og:type",property: "og:type", content: 'article'},
+            {key: "og:card",property: "og:type", content: 'summary_large_image'},
+            {key: "og:image",property: "og:type", content: this.getImage() },
             {key: 'og:title' ,property: "og:title", content: this.$page.post.title},
             {key: 'description', name: "description", content: this.$page.post.description},
             {key:"og:url" ,property: "og:url", content: this.postUrl},
@@ -73,8 +75,8 @@ export default {
             { name: "twitter:card", content: "summary_large_image" },
             { name: "twitter:image", content: this.getImage() },
             { name: "twitter:description", content: this.$page.post.description },
-            // { name: "twitter:title", content: this.$page.post.title },
-            { name: "twitter:site", content: "@samuelumoren16" },
+            { name: "twitter:title", content: this.$page.post.title },
+            { name: "twitter:site", content: "https://umorensamuel.codes" },
             { name: "twitter:creator", content: "@samuelumoren16" },
             // open graph
             { property: "og:title", content: this.$page.post.title },
