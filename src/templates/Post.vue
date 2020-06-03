@@ -97,13 +97,13 @@ export default {
     getImage() {
       const socialImage = getShareImage({
         title: this.$page.post.title,
-        tagline: 'umorensamuel.dev',
+        tagline: 'umorensamuel.codes',
         cloudName: 'samtech',
         imagePublicID: 'whiteimage',
-        titleFont: 'Roboto ',
+        titleFont: 'futura',
         taglineFont: 'futura',
-        titleFontSize: 64,
-        textColor: '000000',
+        titleFontSize: 72,
+        textColor: '232129',
       });
       return socialImage;
     }
