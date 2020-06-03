@@ -31,7 +31,7 @@
      <div class="post-comments">
         <!-- Add comment widgets here -->
           <vue-disqus
-            shortname="umorensamuel-codes"
+            shortname="umorensamuelcodes"
             :identifier="$page.post.title"
           />
       </div>
