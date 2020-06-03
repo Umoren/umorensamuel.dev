@@ -12,7 +12,7 @@ description: "Developers coming from languages such as JavaScript, Python or
   Ruby tend to have issues when working on PHP projects. In this article, you
   will learn how to run a PHP script in 2minutes. "
 ---
-Running developer environment for PHP is relatively easy. You need  to just figure out how to run Apache, PHP, and SQL. The more popular way of doing this is installing an all-in-one package like XAMPP or WAMPP or whatever makes you sleep well at night. 
+Setting up a developer environment for PHP is relatively easy. You need  to just figure out how to run Apache, PHP, and SQL. The more popular way of doing this is installing an all-in-one package like XAMPP or WAMPP or whatever makes you sleep well at night. 
 
 #### INSTALL XAMPP
 
@@ -22,7 +22,7 @@ Follow this tutorial, if you're not sure of what to do. [![Xampp tutorial](https
 
 #### RUNNING THE PHP FILE
 
-In this tutorial, i will be using a live project. Follow these steps:
+Follow these steps:
 
 ##### Open xampp control panel
 
@@ -43,17 +43,15 @@ Now if you installed xampp properly, it should be on your computer's root folder
 * Copy your work folder and paste it in the htdocs folder. For instance, my work folder (has the PHP Script and all other gibberish) is HNG-Script and in the image below, you can find it in the htdocs folder.
 
   ![hng-script](/images/uploads/hng-script.png "My work folder")
-* Finally, type **localhost/your work folder name/**. In my case, it is **localhost/hng-script/**. It might take sometime, just wait.
+* Finally, type **localhost/your work folder name/**. In my case, it is **localhost/hng-script/**. It might take some time, just wait.
 
   ![Result](/images/uploads/xampp2.png "PHP PROJECT IS LIVE!!!")
 
-That's how to setup a local server and run a PHP project on your  computer.
-
-
+That's how to set up a local server and run a PHP project on your  computer.
 
 ### SUMMARY
 
-PHP is a very beautiful and the most used server side language today. In most PHP projects, for other developers ( JavaScript, Ruby, Python and so on)  to contribute, they need to setup the project on their machines. These are the steps in summary:
+PHP is very beautiful and the most used server-side language today. In most PHP projects, for other developers ( JavaScript, Ruby, Python and so on)  to contribute, they need to setup the project on their machines. These are the steps in summary:
 
 \- Install Xampp
 
