@@ -1,5 +1,5 @@
 ---
-image: /images/uploads/untitled-design.png
+cover_image: /images/uploads/untitled-design.png
 title: How to run a PHP File
 date: 2020-06-03T14:53:09.782Z
 published: true
