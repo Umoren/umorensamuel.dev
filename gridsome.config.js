@@ -106,7 +106,7 @@ module.exports = {
       networkFirst: {
         routes: [
           "/",
-          /\.(js|css|png|jpg|jpeg)$/, // means "every JS, CSS, and PNG images"
+          /\.(png|jpg|jpeg)$/, // means "every JS, CSS, and PNG images"
         ],
       },
       precachedRoutes: ["/"],
