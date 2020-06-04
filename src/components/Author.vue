@@ -1,8 +1,7 @@
 <template>
 	<div class="author">
-
+		 
 		<g-image alt="Author image" class="author__image" src="https://res.cloudinary.com/samtech/image/upload/f_auto/q_auto/v1591254954/IMG_8858-min.jpg" style="background-size: contain; object-fit:cover; " width="300" height="300"  blur="5" />
-
 		<h1 v-if="showTitle" class="author__site-title">
 			{{ $static.metadata.siteName }}
 		</h1>
@@ -52,9 +51,10 @@ export default {
 
 	&__image {
 		border-radius: 100%;
-		width: 90px;
-		height: 90px;
+		width: 150px;
+		height: 150px;
 		margin-bottom: 1em;
+		border: 2px dotted #ed54df;
 	}
 
 	&__intro {
