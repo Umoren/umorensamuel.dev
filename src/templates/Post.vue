@@ -61,6 +61,10 @@ export default {
               name: this.$page.post.title,
               content: this.$page.post.description
             }, 
+            {
+              name: "monetization",
+              content: "$ilp.uphold.com/yMjQpUmxyLYK"
+            }
             {key: "og:type",property: "og:type", content: 'article'},
             {key: "og:card",property: "og:type", content: 'summary_large_image'},
             {key: "og:image",property: "og:type", content: this.getImage() },
