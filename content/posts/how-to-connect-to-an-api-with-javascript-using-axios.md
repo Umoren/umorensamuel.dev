@@ -1,5 +1,5 @@
 ---
-image: /images/uploads/how-to-build-an-image-gall-3-.png
+cover_image: /images/uploads/how-to-build-an-image-gall-3-.png
 title: How to Connect to an API with JavaScript using Axios
 date: 2020-06-27T12:01:55.824Z
 published: true
